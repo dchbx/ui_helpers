@@ -1,8 +1,7 @@
+require_relative 'nav_helper'
+
 module UIHelpers
   module Helpers
-    def test
-      puts 'yoooo'
-      'yoooo'
-    end
-  end
+    include UIHelpers::NavHelper
+	end
 end
