@@ -1,4 +1,4 @@
-require 'ui_helpers/workflow/question'
+require 'ui_helpers/workflow/line'
 
 module UIHelpers
   module Workflow
@@ -6,7 +6,7 @@ module UIHelpers
       attr_accessor :lines
 
       def initialize(step)
-        @lines = step['lines'].map { |line| Workflow::Question.new line }
+        @lines = step['lines'].map { |line| Workflow::Line.new line }
       end
     end
   end

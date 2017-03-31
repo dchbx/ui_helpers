@@ -1,11 +1,11 @@
 -
   lines:
-    - question: 'Do you smoke?'
+    - text: 'Do you smoke?'
       type: 'radio'
       values:
         - Yes
         - No
-    - question: 'Are you cool?'
+    - text: 'Are you cool?'
       type: 'dropdown'
       values:
         - Very

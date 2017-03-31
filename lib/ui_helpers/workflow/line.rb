@@ -1,10 +1,10 @@
 module UIHelpers
   module Workflow
-    class Question
-      attr_accessor :question, :type, :values
+    class Line
+      attr_accessor :text, :type, :values
 
       def initialize(attributes)
-        @question = attributes['question']
+        @text = attributes['text']
         @type = attributes['type']
         @values = attributes['values']
       end
