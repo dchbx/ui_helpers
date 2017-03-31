@@ -1,3 +1,44 @@
 .bundle/
 log/*.log
 pkg/
+
+# Ignore the default SQLite database.
+/spec/dummy/db/*.sqlite3
+/spec/dummy/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/spec/dummy/log/*
+!/spec/dummy/log/.keep
+/spec/dummy/tmp
+
+# Ignore vim swapfiles
+*.swp
+
+*.keep
+
+# Ignore local data content
+spec/dummy/db/data
+
+# Ignore Saml Yaml
+spec/dummy/config/saml.yml
+spec/dummy/config/symmetric-encryption.yml
+
+# Ignore the gem folder
+/spec/dummy/gems
+
+
+# Ignore OS generated files
+*/.DS_Store
+.DS_Store
+__MACOSX
+.project
+tags
+
+spec/vocabularies
+plan_xmls.zip
+
+# Ignore byebug history
+.byebug_history
+
+# Ignore .idea
+.idea
