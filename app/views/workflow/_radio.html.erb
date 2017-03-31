@@ -7,3 +7,8 @@
 	  <label class="radio-label" ><span><%= value %></span></label>
 	</div>
 <% end %>
+<% if line.options.key?('not_sure') and line.options['not_sure'] %>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 10px">
+	  | &nbsp <a href="<%= line.options['help_link'] %>"> Not Sure? </a>
+	</div>
+<% end %>

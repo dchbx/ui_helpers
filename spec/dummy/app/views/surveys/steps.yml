@@ -5,6 +5,9 @@
       values:
         - 'Yes'
         - 'No'
+      options:
+        not_sure: true
+        help_link: '/not_sure_help'
     - text: 'Are you cool?'
       type: 'dropdown'
       values:
