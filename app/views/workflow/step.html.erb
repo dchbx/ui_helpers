@@ -1,0 +1,5 @@
+<%= form_tag send("step_#{@model.class.name.pluralize.underscore}_path") do %>
+  <% @current_step.lines.each do |question| %>
+    <%= render question %>
+  <% end %>
+<% end %>

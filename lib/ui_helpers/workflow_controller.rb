@@ -1,56 +1,37 @@
+require 'ui_helpers/workflow/steps'
+
 module UIHelpers
   module WorkflowController
     extend ActiveSupport::Concern
 
-    # note: don't specify included or ClassMethods if unused
-
     included do
       # anything you would want to do in every controller, for example: add a class attribute
-      class_attribute :class_attribute_available_on_every_controller, instance_writer: false
+      #class_attribute :class_attribute_available_on_every_controller, instance_writer: false
+
+      before_filter :find_or_create
+      before_filter :load_steps
+      before_filter :current_step
     end
 
     module ClassMethods
       # notice: no self.method_name here, because this is being extended because ActiveSupport::Concern was extended
-      def make_this_controller_fantastic
-        before_filter :some_instance_method_available_on_every_controller # to be available on every controller
-        after_filter :another_instance_method_available_on_every_controller # to be available on every controller
-        include FantasticStuff
-      end
+      #def make_this_controller_fantastic
+      #  before_filter :some_instance_method_available_on_every_controller # to be available on every controller
+      #  after_filter :another_instance_method_available_on_every_controller # to be available on every controller
+      #  include FantasticStuff
+      #end
     end
 
-    # instance methods to go on every controller go here
-    def some_instance_method_available_on_every_controller
-      puts "a method available on every controller!"
+    def load_steps
+      @steps = Workflow::Steps.new YAML.load_file(Rails.root + "app/views/#{controller_path}/steps.yml")
     end
 
-    def another_instance_method_available_on_every_controller
-      puts "another method available on every controller!"
+    def current_step
+      @current_step ||= @steps.find(@model.workflow['current_step'] || 1)
     end
 
-    module FantasticStuff
-      extend ActiveSupport::Concern
-
-      # note: don't specify included or ClassMethods if unused
-
-      included do
-        class_attribute :class_attribute_only_available_on_fantastic_controllers, instance_writer: false
-      end
-
-      module ClassMethods
-        # class methods available only if make_this_controller_fantastic is specified in the controller
-        def some_fanastic_class_method
-          put "a fantastic class method!"
-        end
-      end
-
-      # instance methods available only if make_this_controller_fantastic is specified in the controller
-      def some_fantastic_instance_method
-        puts "a fantastic instance method!"
-      end
-
-      def another_fantastic_instance_method
-        puts "another fantastic instance method!"
-      end
+    def find_or_create
+      @model = find || create
     end
   end
 end

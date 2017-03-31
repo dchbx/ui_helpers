@@ -1,0 +1,15 @@
+-
+  lines:
+    - question: 'Do you smoke?'
+      type: 'radio'
+      values:
+        - Yes
+        - No
+    - question: 'Are you cool?'
+      type: 'dropdown'
+      values:
+        - Very
+        - A little
+        - None
+    - type: 'multi_row'
+      fields: [first_name, last_name]

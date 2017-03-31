@@ -1,4 +1,5 @@
 require 'active_support/all'
+require 'ui_helpers/engine'
 require 'ui_helpers/helpers'
 require 'ui_helpers/workflow_controller'
 
