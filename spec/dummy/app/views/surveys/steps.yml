@@ -3,8 +3,8 @@
     - text: 'Do you smoke?'
       type: 'radio'
       values:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     - text: 'Are you cool?'
       type: 'dropdown'
       values:
