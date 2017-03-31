@@ -1,5 +1,7 @@
 <%= form_tag send("step_#{@model.class.name.pluralize.underscore}_path") do %>
-  <% @current_step.lines.each do |question| %>
-    <%= render question %>
+  <% @current_step.lines.each do |line| %>
+  	<div class="row row-form-wrapper no-buffer">
+    	<%= render partial: line, locals: { line: line } %>
+    </div>
   <% end %>
 <% end %>
