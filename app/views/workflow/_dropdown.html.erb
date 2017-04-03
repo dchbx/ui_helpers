@@ -1,0 +1,17 @@
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+  <span class="span-text"><%= line.text %></span>*</span>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+  <div class="selectric-labeled">
+      <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+        <div class="selectric-hide-select">
+            <select class="interaction-choice-control-person-name-sfx" tabindex="-1">
+              <% line.values.each do |value| %>
+                <option value="<%= value %>" class="interaction-choice-control-person-name-sfx-0"><%= value %></option>
+              <% end %>
+            </select>
+          </div>
+      </div>    
+  </div>
+</div>
