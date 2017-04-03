@@ -15,3 +15,4 @@ gemspec
 
 gem 'rspec-rails'
 gem 'capybara'
+gem 'byebug'
