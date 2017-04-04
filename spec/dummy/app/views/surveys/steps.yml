@@ -33,3 +33,8 @@
         - Select who will calim this person
         - person two
         - person three
+
+    - type: 'checkbox'
+      text: 'I am a DC resident who is homeless or have no permanent home address'
+      identifier: 'resident'
+
