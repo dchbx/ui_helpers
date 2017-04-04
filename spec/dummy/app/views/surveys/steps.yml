@@ -30,11 +30,23 @@
     - type: 'text_dropdown_text_text'
       fields: [Amount, From, To]
       values:
-        - Select who will calim this person
+        - Select the person
         - person two
         - person three
 
     - type: 'checkbox'
       text: 'I am a DC resident who is homeless or have no permanent home address'
       identifier: 'resident'
+
+    - type: 'text_dropdown_text'
+      fields: [City, Zip]
+      values:
+        - Select state
+
+    - type: 'communication_preferences'
+      text: 'Tell us about how you prefer to receive notices and other communication'
+      values:
+        - 'By Mail'
+        - 'By Email'
+        - 'Both by Email and Mail'
 

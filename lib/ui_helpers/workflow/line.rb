@@ -26,6 +26,10 @@ module UIHelpers
           'workflow/text_dropdown_text_text'
         when 'checkbox'
           'workflow/checkbox'
+        when 'text_dropdown_text'
+          'workflow/text_dropdown_text'
+        when 'communication_preferences'
+          'workflow/communication_preferences'
         end
       end
     end
