@@ -1,0 +1,13 @@
+<% line.fields.each do |value| %>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+  <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;"><%= value %></label><input class="required floatlabel form-control interaction-field-control-person-first-name" required="required" placeholder="<%= value %>" type="text" name="person[first_name]" id="person_first_name" style="transition: all 0.1s ease-in-out;"></div>
+</div>
+<% end %>
+<% line.values.each do |value| %>
+<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero top-small-buffer">
+  <div class="radio">
+    <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
+    <label class="radio-label" for="radio_male"><span><%= value %></span></label>
+  </div>
+</div>
+<% end %>

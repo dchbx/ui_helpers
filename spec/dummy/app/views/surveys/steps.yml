@@ -50,3 +50,17 @@
         - 'By Email'
         - 'Both by Email and Mail'
 
+    - type: 'name_suffix'
+      fields: [FIRST NAME, LAST NAME, MIDDLE NAME]
+      values:
+       -  Jr
+       -  Sr
+       -  Mr
+
+    - type: 'dob_ssn_radio'
+      fields: ['DATE OF BIRTH', 'SOCIAL SECURITY (SSN)', 'RE-ENTER SSN']
+      values:
+       -  MALE
+       -  FEMALE
+
+

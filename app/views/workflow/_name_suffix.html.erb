@@ -1,0 +1,21 @@
+<% line.fields.each do |value| %>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+  <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;"><%= value %></label><input class="required floatlabel form-control interaction-field-control-person-first-name" required="required" placeholder="<%= value %>" type="text" name="person[first_name]" id="person_first_name" style="transition: all 0.1s ease-in-out;">
+  </div>
+</div>
+<% end %>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+  <div class="selectric-labeled">
+    <span><strong>Suffix</strong></span>
+    <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+      <div class="selectric-hide-select">
+        <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1">
+          <% line.values.each do |value| %>
+          <option value= "<%= value %>" class="interaction-choice-control-person-name-sfx-1"><%= value %></option>
+          <% end %>
+        </select>
+      </div>
+    </div>    
+  </div>
+</div>
+

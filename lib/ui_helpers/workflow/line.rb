@@ -30,8 +30,12 @@ module UIHelpers
           'workflow/text_dropdown_text'
         when 'communication_preferences'
           'workflow/communication_preferences'
+        when 'name_suffix'
+          'workflow/name_suffix'
+        when 'dob_ssn_radio'
+           'workflow/dob_ssn_radio'
         end
       end
-    end
+    end 
   end
 end
