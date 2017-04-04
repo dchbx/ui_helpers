@@ -19,6 +19,10 @@ module UIHelpers
           'workflow/dropdown'
         when 'multi_row'
           'workflow/multi_row'
+        when 'label_row'
+          'workflow/label_row'
+        when 'text_dropdown_text_text'
+          'workflow/text_dropdown_text_text'
         end
       end
     end

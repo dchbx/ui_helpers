@@ -1,6 +1,12 @@
 -
   lines:
-    - text: 'Do you smoke?'
+    - text: 'Apply for coverage for this person ?*'
+      type: 'radio'
+      values:
+        - 'Yes'
+        - 'No'
+
+    - text: 'Is this person a neutalised citizen ?'
       type: 'radio'
       values:
         - 'Yes'
@@ -8,11 +14,22 @@
       options:
         not_sure: true
         help_link: '/not_sure_help'
-    - text: 'Are you cool?'
+
+    - text: 'This person will be claimed as dependent by ? '
       type: 'dropdown'
       values:
-        - Very
-        - A little
-        - None
+        - Select who will calim this person
+        - person two
+        - person three
+
     - type: 'multi_row'
       fields: [first_name, last_name]
+
+    - type: 'label_row'
+
+    - type: 'text_dropdown_text_text'
+      fields: [Amount, From, To]
+      values:
+        - Select who will calim this person
+        - person two
+        - person three
