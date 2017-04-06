@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170329194350) do
+ActiveRecord::Schema.define(version: 20170405142515) do
 
   create_table "surveys", force: :cascade do |t|
     t.string   "workflow",   default: "{}"
     t.string   "results",    default: "{}"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.boolean  "smoker"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "address",    default: "{}"
   end
 
 end
