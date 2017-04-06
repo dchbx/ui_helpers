@@ -1,16 +1,20 @@
--
-  lines:
+- lines:
     - text: 'Apply for coverage for this person ?*'
       type: 'radio'
       values:
-        - 'Yes'
-        - 'No'
-
+        - label: 'Yes'
+          value: true
+        - label: 'No'
+          value: false
+      attribute: 'smoker'
+- lines:
     - text: 'Is this person a neutalised citizen ?'
       type: 'radio'
       values:
-        - 'Yes'
-        - 'No'
+        - label: 'Yes'
+          value: true
+        - label: 'No'
+          value: false
       options:
         not_sure: true
         help_link: '/not_sure_help'

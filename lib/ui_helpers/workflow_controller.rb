@@ -22,6 +22,11 @@ module UIHelpers
       #end
     end
 
+    def step
+      puts 'test'
+      render 'step'
+    end
+
     def load_steps
       @steps = Workflow::Steps.new YAML.load_file(Rails.root + "app/views/#{controller_path}/steps.yml")
     end

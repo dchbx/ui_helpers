@@ -3,8 +3,10 @@
 </div>
 <% line.values.each do |value| %>
 	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
-	  <input class=" " id=" " required=" " type="radio" value=" " name=" ">
-	  <label class="radio-label" ><span><%= value %></span></label>
+    <%= label_tag line.name_attribute class: 'radio-inline' do %>
+      <%= radio_button_tag line.name_attribute, value['value'] %>
+      <%= value['label'] %>
+    <% end %>
 	</div>
 <% end %>
 <% if line.options.key?('not_sure') and line.options['not_sure'] %>

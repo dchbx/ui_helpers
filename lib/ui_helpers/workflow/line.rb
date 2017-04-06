@@ -1,7 +1,7 @@
 module UIHelpers
   module Workflow
     class Line
-      attr_accessor :text, :type, :values, :options, :fields, :identifier
+      attr_accessor :text, :type, :values, :options, :fields, :identifier, :attribute
 
       def initialize(attributes)
         @text = attributes['text']
@@ -10,6 +10,7 @@ module UIHelpers
         @options = attributes['options'] || {}
         @fields = attributes['fields']
         @identifier = attributes['identifier']
+        @attribute = attributes['attribute']
       end
 
       def to_partial_path
@@ -36,6 +37,10 @@ module UIHelpers
            'workflow/dob_ssn_radio'
         end
       end
-    end 
+
+      def name_attribute(field=nil)
+        "attributes[#{attribute}]"
+      end
+    end
   end
 end
