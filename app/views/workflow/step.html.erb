@@ -1,13 +1,28 @@
 <div class="container">
-  <h1 class="darkblue">Personal Info</h1>
+  <h1 class="darkblue"><%= @current_step.heading %></h1>
   <p>Please enter the following info for <strong> Mary</strong>. When you’ve finished, select CONTINUE.</p>
   <p class="memo">* = required field</p>
 
-  <div id=" " class="focus_effect module">
+  <div class="focus_effect module">
     <%= form_tag send("step_#{@model.class.name.pluralize.underscore}_path") do %>
       <% @current_step.lines.each do |line| %>
         <div class="row row-form-wrapper no-buffer">
-          <%= render partial: line, locals: { line: line } %>
+          <% line.cells.each do |cell| %>
+            <div class='col-md-<%= cell.gutter %>'>
+              <% case cell.type %>
+              <% when 'radio' %>
+                <%= render 'workflow/radio', cell: cell %>
+              <% when 'checkbox' %>
+                <%= render 'workflow/checkbox', cell: cell %>
+              <% when 'dropdown' %>
+                <%= render 'workflow/dropdown', cell: cell %>
+              <% when 'text' %>
+                <%= render 'workflow/text', cell: cell %>
+              <% when 'input' %>
+                <%= render 'workflow/input', cell: cell %>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       <% end %>
       <%= submit_tag 'Next step' %>
