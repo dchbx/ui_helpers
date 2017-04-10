@@ -1,54 +1,109 @@
 
-- heading: Personal Info
-  lines:
-    - cells:
-      - gutter: 6
-        type: 'text'
-        text: 'Apply for coverage for this person ?*'
-      - gutter: 6
-        type: 'radio'
-        values:
-          - label: 'Yes'
-            value: true
-            gutter: 2
-          - label: 'No'
-            value: false
-            gutter: 2
-        attribute: 'smoker'
-    - cells:
-      - gutter: 6
-        type: 'text'
-        text: 'This person will be claimed as dependent by ? '
-      - gutter: 6
-        type: 'dropdown'
-        name: 'check'
-        required: true
-        values:
-          - Select who will calim this person
-          - person two
-          - person three
-    - cells:
-      - gutter: 3
-        type: checkbox
-        label: 'name'
-      - gutter: 3
-        type: 'checkbox'
-        label: 'cheker'
-    - cells:
-      - gutter: 4
-        type: input
-        name: 'first_name'
-        placeholder: 'FIRST NAME'
-        required: true
-      - gutter: 4
-        type: input
-        name: 'middle_name'
-        placeholder: 'MIDDLE NAME'
-      - gutter: 4
-        type: 'dropdown'
-        name: 'check'
-        required: true
-        values:
-          - Select
-          - person two
-          - person three
+- step:
+  - section:
+      heading: Personal Info
+      lines:
+        - cells:
+          - gutter: 6
+            type: 'text'
+            text: 'Apply for coverage for this person ?*'
+          - gutter: 6
+            type: 'radio'
+            values:
+              - label: 'Yes'
+                value: true
+                gutter: 2
+              - label: 'No'
+                value: false
+                gutter: 2
+            attribute: 'smoker'
+        - cells:
+          - gutter: 6
+            type: 'text'
+            text: 'This person will be claimed as dependent by ? '
+          - gutter: 6
+            type: 'dropdown'
+            name: 'check'
+            required: true
+            values:
+              - Select who will calim this person
+              - person two
+              - person three
+        - cells:
+          - gutter: 3
+            type: checkbox
+            label: 'name'
+          - gutter: 3
+            type: 'checkbox'
+            label: 'cheker'
+        - cells:
+          - gutter: 4
+            type: input
+            name: 'first_name'
+            placeholder: 'FIRST NAME'
+            required: true
+          - gutter: 4
+            type: input
+            name: 'middle_name'
+            placeholder: 'MIDDLE NAME'
+          - gutter: 4
+            type: 'dropdown'
+            name: 'check'
+            required: true
+            values:
+              - Select
+              - person two
+              - person three
+  - section:
+      lines:
+        - cells:
+          - gutter: 6
+            type: 'text'
+            text: 'Apply for coverage for this person ?*'
+          - gutter: 6
+            type: 'radio'
+            values:
+              - label: 'Yes'
+                value: true
+                gutter: 2
+              - label: 'No'
+                value: false
+                gutter: 2
+            attribute: 'smoker'
+        - cells:
+          - gutter: 6
+            type: 'text'
+            text: 'This person will be claimed as dependent by ? '
+          - gutter: 6
+            type: 'dropdown'
+            name: 'check'
+            required: true
+            values:
+              - Select who will calim this person
+              - person two
+              - person three
+        - cells:
+          - gutter: 3
+            type: checkbox
+            label: 'name'
+          - gutter: 3
+            type: 'checkbox'
+            label: 'cheker'
+        - cells:
+          - gutter: 4
+            type: input
+            name: 'first_name'
+            placeholder: 'FIRST NAME'
+            required: true
+          - gutter: 4
+            type: input
+            name: 'middle_name'
+            placeholder: 'MIDDLE NAME'
+          - gutter: 4
+            type: 'dropdown'
+            name: 'check'
+            required: true
+            values:
+              - Select
+              - person two
+              - person three

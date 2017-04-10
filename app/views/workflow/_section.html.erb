@@ -1,0 +1,24 @@
+<% if !heading.nil? %>
+  <h1 class="darkblue"><%= heading %></h1>
+<% end %>
+
+<% lines.each do |line| %>
+  <div class="row row-form-wrapper no-buffer">
+  <% line.cells.each do |cell| %>
+  <div class='col-md-<%= cell.gutter %>'>
+    <% case cell.type %>
+    <% when 'radio' %>
+      <%= render 'workflow/radio', cell: cell %>
+    <% when 'checkbox' %>
+      <%= render 'workflow/checkbox', cell: cell %>
+    <% when 'dropdown' %>
+      <%= render 'workflow/dropdown', cell: cell %>
+    <% when 'text' %>
+      <%= render 'workflow/text', cell: cell %>
+    <% when 'input' %>
+      <%= render 'workflow/input', cell: cell %>
+    <% end %>
+  </div>
+  <% end %>
+  </div>
+<% end %>

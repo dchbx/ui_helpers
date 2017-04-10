@@ -1,19 +1,18 @@
-require 'ui_helpers/workflow/line'
+require 'ui_helpers/workflow/section'
 
 module UIHelpers
   module Workflow
     class Step
-      attr_accessor :heading, :lines, :number
+      attr_accessor :sections, :heading
 
       def initialize(step, number)
-        @lines = step['lines'].map { |line| Workflow::Line.new line }
-        @heading = step['heading']
-        @number = number
+        @sections = step.map { |section| Workflow::Section.new section["section"] }
       end
 
       def to_i
         @number
       end
+
     end
   end
 end
