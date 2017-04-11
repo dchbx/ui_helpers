@@ -2,11 +2,13 @@
 - step:
   - section:
       heading: Personal Info
+      heading_text: Please enter the following info. When you've finished Select CONTINUE.
       lines:
         - cells:
           - gutter: 6
             type: 'text'
             text: 'Apply for coverage for this person ?*'
+            className: 'small-padding-left-right'
           - gutter: 6
             type: 'radio'
             values:
@@ -55,6 +57,7 @@
               - person two
               - person three
   - section:
+      heading: Personal Info
       lines:
         - cells:
           - gutter: 6

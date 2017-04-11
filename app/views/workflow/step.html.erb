@@ -1,15 +1,15 @@
 <div class="container">
   <% if !@current_step.heading.nil? %>
   <h1 class="darkblue"><%= @current_step.heading %></h1>
-  <p>Please enter the following info for <strong> Mary</strong>. When you’ve finished, select CONTINUE.</p>
+  
   <p class="memo">* = required field</p>
   <% end %>
 
   <div class="focus_effect module">
     <%= form_tag send("step_#{@model.class.name.pluralize.underscore}_path") do %>
       <% @current_step.sections.each do |section| %>
-        <div style="margin-bottom: 30px">
-          <%= render 'workflow/section', :lines => section.lines, :heading => section.heading %>
+        <div class="margin-bottom-30">
+          <%= render 'workflow/section', :lines => section.lines, :heading => section.heading, :heading_text => section.heading_text, :className => section.className %>
         </div>
       <% end %>
       <%= submit_tag 'Next step' %>

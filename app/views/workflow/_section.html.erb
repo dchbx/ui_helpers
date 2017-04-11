@@ -1,11 +1,14 @@
 <% if !heading.nil? %>
   <h1 class="darkblue"><%= heading %></h1>
+  <% if !heading_text.nil? %>
+    <p><%= heading_text %></p>
+  <% end %>
 <% end %>
 
 <% lines.each do |line| %>
   <div class="row row-form-wrapper no-buffer">
   <% line.cells.each do |cell| %>
-  <div class='col-md-<%= cell.gutter %>'>
+  <div class='col-md-<%= cell.gutter %> <%= cell.className %>'>
     <% case cell.type %>
     <% when 'radio' %>
       <%= render 'workflow/radio', cell: cell %>
