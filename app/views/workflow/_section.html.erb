@@ -1,7 +1,8 @@
 <% if !heading.nil? %>
-  <h1 class="darkblue"><%= heading %></h1>
+  <h2 class="darkblue"><%= heading %></h2>
   <% if !heading_text.nil? %>
     <p><%= heading_text %></p>
+    <p class="memo">* = required field</p>
   <% end %>
 <% end %>
 
@@ -25,3 +26,4 @@
   <% end %>
   </div>
 <% end %>
+<br><br>

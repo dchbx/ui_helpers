@@ -1,8 +1,9 @@
 <div class="container">
   <% if !@current_step.heading.nil? %>
   <h1 class="darkblue"><%= @current_step.heading %></h1>
-  
-  <p class="memo">* = required field</p>
+  <% if !@current_step.heading_text.nil? %>
+  <p ><%= @current_step.heading_text %></p>
+  <% end %>
   <% end %>
 
   <div class="focus_effect module">
