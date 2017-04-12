@@ -1,15 +1,21 @@
+
 <% if !heading.nil? %>
-  <h2 class="darkblue"><%= heading %></h2>
-  <% if !heading_text.nil? %>
+  <div class="row">
+    <h2 class="darkblue"><%= heading %></h2>
+  </div>
+<% end %>
+
+<% if !heading_text.nil? %>
+  <div class="row">
     <p><%= heading_text %></p>
     <p class="memo">* = required field</p>
-  <% end %>
+  </div>
 <% end %>
 
 <% lines.each do |line| %>
-  <div class="row row-form-wrapper no-buffer">
+  <div class="row row-form-wrapper no-buffer row-height">
   <% line.cells.each do |cell| %>
-  <div class='col-md-<%= cell.gutter %> <%= cell.className %>'>
+  <div class='col-md-<%= cell.gutter %>'>
     <% case cell.type %>
     <% when 'radio' %>
       <%= render 'workflow/radio', cell: cell %>
@@ -21,6 +27,8 @@
       <%= render 'workflow/text', cell: cell %>
     <% when 'input' %>
       <%= render 'workflow/input', cell: cell %>
+    <% when 'label' %>
+      <%= render 'workflow/label', cell: cell %>
     <% end %>
   </div>
   <% end %>

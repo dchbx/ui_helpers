@@ -8,6 +8,10 @@ input::-webkit-input-placeholder {
     color: #C3C3C3;
 }
 
+input {
+  width: 100%;
+}
+
 .span-text {
     padding-left: 10px !important;
     color: #414141 !important;
@@ -78,4 +82,26 @@ input::-webkit-input-placeholder {
   background-color: #007BC4; 
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+.input-border-none {
+  border: none;
+}
+
+textarea:focus, input:focus, input{
+    outline: none;
+    border: none;
+}
+
+::-webkit-input-placeholder { 
+  font-size: 20px;
+}
+
+.small-padding-top-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row-height {
+  line-height: 2.4
 }

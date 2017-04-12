@@ -1,7 +1,7 @@
 module UIHelpers
   module Workflow
     class Cell
-      attr_accessor :gutter, :text, :type, :values, :disabled, :name, :options, :fields, :identifier, :attribute, :required, :label, :placeholder, :className
+      attr_accessor :gutter, :text, :type, :values, :disabled, :name, :options, :fields, :identifier, :attribute, :required, :label, :placeholder, :classNames, :value
 
       def initialize(attributes)
         @gutter = attributes['gutter']
@@ -17,7 +17,8 @@ module UIHelpers
         @name = attributes['name']
         @label = attributes['label']
         @placeholder = attributes['placeholder']
-        @className = attributes['className'] 
+        @classNames = attributes['classNames']
+        @value = attributes['value']
       end
 
       def name_attribute(field=nil)

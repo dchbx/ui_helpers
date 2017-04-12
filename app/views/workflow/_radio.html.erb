@@ -1,13 +1,3 @@
-<% cell.values.each do |value| %>
-	<div class="col-lg-<%= value['gutter'] %> col-md-<%= value['gutter'] %> col-sm-<%= value['gutter'] %> col-xs-<%= value['gutter'] %>" style="margin-top: 10px">
-    <%= label_tag cell.name_attribute class: 'radio-inline' do %>
-      <%= radio_button_tag cell.name_attribute, value['value'] %>
-      <%= value['label'] %>
-    <% end %>
-	</div>
-<% end %>
-<% if cell.options.key?('not_sure') and cell.options['not_sure'] %>
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 10px">
-	  | &nbsp <a href="<%= cell.options['help_link'] %>"> Not Sure? </a>
-	</div>
-<% end %>
+<div class="col-md-<%= cell.gutter %>">
+<%= radio_button_tag cell.name, cell.value, class: cell.classNames %>
+</div>

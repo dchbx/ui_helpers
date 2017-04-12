@@ -1,6 +1,3 @@
-<%= label_tag cell.name_attribute do %>
-      <%= check_box(cell.name, cell.label, class: cell.className) %>
-      <%= cell.label %>
-<% end %>
-
-
+<div class="col-md-<%= cell.gutter %>">
+<%= check_box(cell.name, cell.label, class: cell.classNames) %>
+</div>

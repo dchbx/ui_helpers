@@ -1,3 +1,89 @@
+- step:
+    sections:
+      - section:
+          heading: Personal info
+          heading_text: First we need to verify whether you're new to the DC Health link or you have an existing account. Please enter your personal information. When you have finished select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 3
+                  type: input
+                  name: first_name
+                  placeholder: FIRST NAME *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: input
+                  name: first_name
+                  placeholder: MIDDLE NAME
+                  required: true
+                - gutter: 3
+                  type: input
+                  name: first_name
+                  placeholder: LAST NAME *
+                  required: true
+                - gutter: 3
+                  type: 'dropdown'
+                  name: 'check'
+                  className: 'form-control'
+                  required: true
+                  values:
+                    - Select
+                    - person two
+                    - person three
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Are you applying for coverage for yourself?*
+                  classNames: 'small-padding-left-right small-padding-top-bottom'
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 2
+                  type: label
+                  name: opt_radio
+                  label: 'YES'
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 2
+                  type: label
+                  name: opt_radio
+                  label: 'NO'
+            - cells:
+                - gutter: 2
+                  type: input
+                  name: dob
+                  placeholder: DATE OF BIRTH *
+                  required: true
+                - gutter: 2
+                  type: input
+                  name: ssn
+                  placeholder: SOCIAL SECURITY(SSN) *
+                  required: true
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: label
+                  label: ssn
+                  name: opt_checkbox
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 1
+                  type: label
+                  name: opt_radio
+                  label: 'MALE'
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 2
+                  type: label
+                  name: opt_radio
+                  label: 'FEMALE'
 
 - step:
     heading: Step Heading
@@ -11,7 +97,7 @@
               - gutter: 6
                 type: 'text'
                 text: 'Apply for coverage for this person ?*'
-                className: 'small-padding-left-right'
+                classNames: 'small-padding-left-right'
               - gutter: 6
                 type: 'radio'
                 values:
