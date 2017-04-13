@@ -84,117 +84,161 @@
                   type: label
                   name: opt_radio
                   label: 'FEMALE'
+      - section:
+          heading: Second section
+          heading_text: heading for second section
+          lines:
+            - cells:
+                - gutter: 4
+                  type: text
+                  text: Are you applying for coverage for yourself?*
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 1
+                  type: label
+                  name: opt_radio
+                  label: 'YES'
+                - gutter: 1
+                  type: radio
+                  name: opt_radio
+                  value: true
+                - gutter: 1
+                  type: label
+                  name: opt_radio
+                  label: 'NO'
+                - gutter: 4
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: 'span-text'
+                  text: 'Help may include <span href="#" data-toggle="tooltip" title="Medicaid is a joint federal-state health program that provides health care coverage to low-income and disabled adults, children and families. To be eligible for DC Medicaid, you must be a District resident and must meet non-financial and financial eligibility requirements. Medicaid covers many services, including doctor visits, hospital care, prescription drugs, mental health services, transportation and many other services at little or no cost to the individual. Currently, 1 out of every 3 District residents receives quality health care coverage through the Medicaid program. Learn more about DC Medicaid." class= "dottedline test" >Medicaid</span>, <span href="#" data-toggle="tooltip" title="An informal way of referring to the Advance Premium Tax Credit for individuals or families or the Small Business Tax Credit." class= "dottedline test">tax credits</span>, or <span href="#" data-toggle="tooltip" title="A discount that lowers your costs for deductibles, coinsurance, copayments, and also lowers what you have to pay to reach your out-of-pocket limit. To get these savings, you must apply for financial assistance. DC Health Link will help you determine if you qualify as part of the application process. Then you can enroll. Most customers must enroll in a Silver Health Plan to receive cost-sharing reductions. Native Americans receive additional cost-sharing reductions regardless of a plan''s metal level." class= "dottedline test">cost-sharing reductions</span>'
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: 'span-text'
+                  text: 'Learn more about <a href= "#">your options</a> or <a href="#">use our Plan Match Tool</a> to see if you may qualify.'
+            - cells:
+                - gutter: 6
+                  type: input
+                  name: home_address_line_1
+                  placeholder: HOME ADDRESS LINE 1 *
+                  classNames:
+                  required: true
+                - gutter: 6
+                  type: input
+                  name: home_address_line_2
+                  placeholder: HOME ADDRESS LINE 2
+                  classNames:
+            - cells:
+                - gutter: 3
+                  type: input
+                  name: city
+                  placeholder: CITY *
+                  classNames:
+                  required: true
+                - gutter: 6
+                  type: 'dropdown'
+                  name: 'check'
+                  classNames: 'form-control'
+                  required: true
+                  values:
+                    - Choose State
+                    - District of Columbia
+                    - Massachussets
+                - gutter: 3
+                  type: input
+                  name: zip
+                  placeholder: ZIP *
+                  classNames:
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: This person will be claimed as a dependent by ? *
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                  required: true
+                - gutter: 6
+                  type: 'dropdown'
+                  name: 'check'
+                  classNames: 'form-control'
+                  classNames:
+                  required: true
+                  values:
+                    - Select who will calim this person
+                    - Employee
+                    - Spouse
+                    - Child
+            - cells:
+                - gutter: 3
+                  type: input
+                  name: amount
+                  placeholder: AMOUNT *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: 'dropdown'
+                  name: 'check'
+                  classNames: 'form-control'
+                  classNames:
+                  required: true
+                  values:
+                    - HOW OFTEN
+                    - ONE 
+                    - TWO
+                - gutter: 3
+                  type: input
+                  name: from
+                  placeholder: FROM *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: input
+                  name: to
+                  placeholder: TO *
+                  classNames:
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: input
+                  name: city
+                  placeholder: CITY *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: 'dropdown'
+                  name: 'check'
+                  classNames: 'form-control'
+                  required: true
+                  values:
+                    - Choose State
+                    - District of Columbia
+                    - Massachussets
+                - gutter: 3
+                  type: input
+                  name: zip
+                  placeholder: ZIP *
+                  classNames:
+                  required: true
+            - cells:
+              - gutter: 12
+                type: 'anchor'
+                label: 'Add Additional Job Income'
+                value: some.html
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: 'span-text'
+                  text: '<strong>Check all that apply</strong>, and give the amount & how often this person receives this income. <br> <strong> NOTE</strong>: You <strong>do not need to tell us</strong> about child support, veterans payments, or supplemental security income(SSI).*'
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 11
+                  type: text
+                  text: Non business income (earned from rating personal property; only applies if you are not a Real Estate professional.)
+                  classNames: 'span-text'
 
-- step:
-    heading: Step Heading
-    heading_text: Step heading text. (First, we need to verify whether you're new to DC Health Link or affiliated with another account. Please enter your personal information. When you're finished, select CONTINUE.)
-    sections:
-      - section:
-          heading: Section Heading
-          heading_text: Section heading text. Please enter the following info. When you've finished Select CONTINUE.
-          lines:
-            - cells:
-              - gutter: 6
-                type: 'text'
-                text: 'Apply for coverage for this person ?*'
-                classNames: 'small-padding-left-right'
-              - gutter: 6
-                type: 'radio'
-                values:
-                  - label: 'Yes'
-                    value: true
-                    gutter: 2
-                  - label: 'No'
-                    value: false
-                    gutter: 2
-                attribute: 'smoker'
-            - cells:
-              - gutter: 6
-                type: 'text'
-                text: 'This person will be claimed as dependent by ? '
-              - gutter: 6
-                type: 'dropdown'
-                name: 'check'
-                required: true
-                values:
-                  - Select who will calim this person
-                  - person two
-                  - person three
-            - cells:
-              - gutter: 3
-                type: checkbox
-                label: 'name'
-              - gutter: 3
-                type: 'checkbox'
-                label: 'cheker'
-            - cells:
-              - gutter: 4
-                type: input
-                name: 'first_name'
-                placeholder: 'FIRST NAME'
-                required: true
-              - gutter: 4
-                type: input
-                name: 'middle_name'
-                placeholder: 'MIDDLE NAME'
-              - gutter: 4
-                type: 'dropdown'
-                name: 'check'
-                required: true
-                values:
-                  - Select
-                  - person two
-                  - person three
-      - section:
-          lines:
-            - cells:
-              - gutter: 6
-                type: 'text'
-                text: 'Apply for coverage for this person ?*'
-              - gutter: 6
-                type: 'radio'
-                values:
-                  - label: 'Yes'
-                    value: true
-                    gutter: 2
-                  - label: 'No'
-                    value: false
-                    gutter: 2
-                attribute: 'smoker'
-            - cells:
-              - gutter: 6
-                type: 'text'
-                text: 'This person will be claimed as dependent by ? '
-              - gutter: 6
-                type: 'dropdown'
-                name: 'check'
-                required: true
-                values:
-                  - Select who will calim this person
-                  - person two
-                  - person three
-            - cells:
-              - gutter: 3
-                type: checkbox
-                label: 'name'
-              - gutter: 3
-                type: 'checkbox'
-                label: 'cheker'
-            - cells:
-              - gutter: 4
-                type: input
-                name: 'first_name'
-                placeholder: 'FIRST NAME'
-                required: true
-              - gutter: 4
-                type: input
-                name: 'middle_name'
-                placeholder: 'MIDDLE NAME'
-              - gutter: 4
-                type: 'dropdown'
-                name: 'check'
-                required: true
-                values:
-                  - Select
-                  - person two
-                  - person three
