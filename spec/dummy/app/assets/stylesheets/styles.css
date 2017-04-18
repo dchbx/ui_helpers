@@ -109,3 +109,24 @@ textarea:focus, input:focus, input{
 .no-top-margin {
   margin-top: 0px !important;
 }
+
+.medium-negative-margin {
+  margin-left: -30px;
+}
+
+.no-margin-padding {
+  margin: 0px;
+  padding: 0px
+}
+
+.line-height-small {
+  line-height: 1;
+}
+
+.line-height-medium {
+  line-height: 2;
+}
+
+.font-size-small {
+  font-size: 12px;
+}
