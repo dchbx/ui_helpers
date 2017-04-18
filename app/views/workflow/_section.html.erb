@@ -32,8 +32,10 @@
       <%= render 'workflow/label', cell: cell %>
     <% when 'raw_html' %>
       <%= render 'workflow/raw_html', cell: cell %>
-      <% when 'anchor' %>
+    <% when 'anchor' %>
       <%= render 'workflow/anchor', cell: cell %>
+    <% when 'label_radio' %>
+      <%= render 'workflow/label_radio', cell: cell %>
     <% end %>
   </div>
   <% end %>

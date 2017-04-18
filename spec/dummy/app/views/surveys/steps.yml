@@ -37,19 +37,25 @@
                   classNames: 'small-padding-left-right small-padding-top-bottom'
                 - gutter: 1
                   type: radio
-                  name: opt_radio
-                  value: true
+                  name: opt_radio1
+                  value: 'YES'
+                  id: 'yes'
+                  checked: true
                 - gutter: 2
                   type: label
-                  name: opt_radio
+                  name: opt_radio1
                   label: 'YES'
+                  for: 'yes'
                 - gutter: 1
                   type: radio
-                  name: opt_radio
-                  value: true
+                  name: opt_radio1
+                  value: 'NO'
+                  id: 'no'
+                  cheked: false
                 - gutter: 2
                   type: label
-                  name: opt_radio
+                  for: 'no'
+                  name: opt_radio1
                   label: 'NO'
             - cells:
                 - gutter: 2
@@ -68,22 +74,145 @@
                   type: label
                   label: ssn
                   name: opt_checkbox
-                - gutter: 1
-                  type: radio
-                  name: opt_radio
-                  value: true
-                - gutter: 1
-                  type: label
-                  name: opt_radio
-                  label: 'MALE'
-                - gutter: 1
-                  type: radio
-                  name: opt_radio
-                  value: true
                 - gutter: 2
-                  type: label
-                  name: opt_radio
+                  type: label_radio
+                  name: gender
+                  value: male
+                  id: male
+                  checked: true
+                  label: 'MALE'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: gender
+                  value: female
+                  id: female
+                  checked: false
                   label: 'FEMALE'
+                  classNames: form-control no-top-margin
+      - section:
+          heading: More about You
+          heading_text: Please answer the following questions. When you've finished SELECT Continue.
+          lines:
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Are you a US citizen or US National.
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 2
+                  type: label_radio
+                  name: row1
+                  value: 'yes1'
+                  id: 'yes1'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: row1
+                  value: 'no1'
+                  id: 'no1'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Are you a naturalized citizen?*
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 2
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+                - gutter: 3
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Are you a member of American indian or Alaskn native Tribe?*
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 2
+                  type: label_radio
+                  name: row3
+                  value: 'yes3'
+                  id: 'yes3'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: row3
+                  value: 'no3'
+                  id: 'no3'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Are you currently incarcerated?*
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 2
+                  type: label_radio
+                  name: row4
+                  value: 'yes4'
+                  id: 'yes4'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: row4
+                  value: 'no4'
+                  id: 'no4'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+                - gutter: 3
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+
+            - cells:
+                - gutter: 5
+                  type: text
+                  text: Do you have disability?*
+                  classNames: 'span-text small-padding-left-right small-padding-top-bottom'
+                - gutter: 2
+                  type: label_radio
+                  name: row5
+                  value: 'yes5'
+                  id: 'yes5'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: row5
+                  value: 'no5'
+                  id: 'no5'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+                - gutter: 3
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'  
+           
+
       - section:
           heading: Second section
           heading_text: heading for second section
@@ -242,3 +371,4 @@
                   text: Non business income (earned from rating personal property; only applies if you are not a Real Estate professional.)
                   classNames: 'span-text'
 
+  

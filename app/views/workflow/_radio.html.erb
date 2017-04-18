@@ -1,3 +1,1 @@
-<div class="col-md-<%= cell.gutter %>">
-<%= radio_button_tag cell.name, cell.value, class: cell.classNames %>
-</div>
+<%= radio_button_tag cell.name, cell.value, cell.checked, class: cell.classNames, id: cell.id %>
