@@ -9,6 +9,7 @@ module UIHelpers
         @heading = step['heading']
         @heading_text = step["heading_text"]
         @sections = step['sections'].map { |section| Workflow::Section.new section["section"] }
+        @number = number
       end
 
       def to_i

@@ -90,69 +90,8 @@
                   checked: false
                   label: 'FEMALE'
                   classNames: form-control no-top-margin
-      - section:
-          heading: Address
-          heading_text: Please enter the following info. When you've finished SELECT Continue.
-          lines:
-            - cells:
-                - gutter: 12
-                  type: raw_html
-                  text: '<p class="no-margin-padding line-height-small font-size-small"><b>Enter a home address</b></p><p class="no-margin-padding line-height-medium"><b>NOTE: </b>If you receive mail at different address, enter both a home address and a mailing address</p>'
-            - cells:
-                - gutter: 6
-                  type: input
-                  name: home_address_line_1
-                  placeholder: HOME ADDRESS Line 1 *
-                  required: true
-                - gutter: 6
-                  type: input
-                  name: home_address_line_1
-                  placeholder: HOME Address Line 2
-            - cells:
-                - gutter: 4
-                  type: input
-                  name: city
-                  placeholder: CITY*
-                  required: true
-                - gutter: 4
-                  type: dropdown
-                  name: state
-                  values:
-                    - virginia
-                - gutter: 4
-                  type: input
-                  name: zip
-                  placeholder: ZIP *
-                  required: true
-            - cells:
-                - gutter: 6
-                  type: raw_html
-                  classNames: 'span-text'
-                  text: 'Are you <b>temporarily</b> outside DC and <b>intend to return</b>? *'
-                - gutter: 2
-                  type: label_radio
-                  name: DC
-                  value: '3yes2'
-                  id: '3yes2'
-                  checked: true
-                  label: 'YES'
-                  classNames: 'form-control no-top-margin'
-                - gutter: 2
-                  type: label_radio
-                  name: DC
-                  value: '3no2'
-                  id: '3no2'
-                  checked: false
-                  label: 'NO'
-                  classNames: form-control no-top-margin
-            - cells:
-                - gutter: 1
-                  type: checkbox
-                - gutter: 11
-                  type: text
-                  text: I am DC resident who is homeless or have no permanent address.
-                  classNames: 'span-text medium-negative-margin'
-
+- step:
+    sections:
       - section:
           heading: More about You
           heading_text: Please answer the following questions. When you've finished SELECT Continue.
@@ -273,9 +212,74 @@
                   classNames: form-control no-top-margin
                 - gutter: 3
                   type: raw_html
-                  text: '| &nbsp <a href=""> Not Sure? </a>'  
-           
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+- step:
+    sections:
+      - section:
+          heading: Address
+          heading_text: Please enter the following info. When you've finished SELECT Continue.
+          lines:
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: '<p class="no-margin-padding line-height-small font-size-small"><b>Enter a home address</b></p><p class="no-margin-padding line-height-medium"><b>NOTE: </b>If you receive mail at different address, enter both a home address and a mailing address</p>'
+            - cells:
+                - gutter: 6
+                  type: input
+                  name: home_address_line_1
+                  placeholder: HOME ADDRESS Line 1 *
+                  required: true
+                - gutter: 6
+                  type: input
+                  name: home_address_line_1
+                  placeholder: HOME Address Line 2
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: city
+                  placeholder: CITY*
+                  required: true
+                - gutter: 4
+                  type: dropdown
+                  name: state
+                  values:
+                    - virginia
+                - gutter: 4
+                  type: input
+                  name: zip
+                  placeholder: ZIP *
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: raw_html
+                  classNames: 'span-text'
+                  text: 'Are you <b>temporarily</b> outside DC and <b>intend to return</b>? *'
+                - gutter: 2
+                  type: label_radio
+                  name: DC
+                  value: '3yes2'
+                  id: '3yes2'
+                  checked: true
+                  label: 'YES'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: DC
+                  value: '3no2'
+                  id: '3no2'
+                  checked: false
+                  label: 'NO'
+                  classNames: form-control no-top-margin
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 11
+                  type: text
+                  text: I am DC resident who is homeless or have no permanent address.
+                  classNames: 'span-text medium-negative-margin'
 
+- step:
+    sections:
       - section:
           heading: Second section
           heading_text: heading for second section
