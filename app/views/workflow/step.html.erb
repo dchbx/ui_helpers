@@ -16,9 +16,14 @@
               <%= render 'workflow/section', :lines => section.lines, :heading => section.heading, :heading_text => section.heading_text, :classNames => section.classNames %>
             </div>
           <% end %>
+          <% unless  @steps.last_step?(@current_step) %>
           <%= submit_tag 'Next step' %>
+          <% end %>
         <% end %>
       </div>
+      <% unless @current_step.to_i == 1 %>
+        <%= link_to "Previous Step", controller:'surveys', action:'previous_step' %>
+      <% end %>
     </div>
   </div>
   <div class="col-md-2"></div>

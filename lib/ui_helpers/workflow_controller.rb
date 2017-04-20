@@ -35,6 +35,16 @@ module UIHelpers
       @current_step ||= @steps.find(@model.workflow['current_step'] || 1)
     end
 
+    def previous_step
+      @model = find
+      @model.workflow['current_step'] = @model.workflow['current_step'] - 1
+      @model.save!
+      current_step
+
+      # redirecting to new action, in order to load another page.
+      redirect_to action: 'new'
+    end
+
     def find_or_create
       @model = find || create
     end
