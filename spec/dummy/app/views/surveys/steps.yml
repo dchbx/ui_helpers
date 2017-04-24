@@ -70,9 +70,9 @@
                   required: true
                 - gutter: 1
                   type: checkbox
-                - gutter: 2
+                - gutter: 3
                   type: label
-                  label: ssn
+                  label: I don't have SSN
                   name: opt_checkbox
                 - gutter: 2
                   type: label_radio
@@ -438,4 +438,335 @@
                   text: Non business income (earned from rating personal property; only applies if you are not a Real Estate professional.)
                   classNames: 'span-text'
 
-  
+- step:
+    sections:
+      - section:
+          heading: Communication Preferences
+          heading_text: Please enter the following info. When you've finished, select CONTINUE
+          lines:
+            - cells:
+                - gutter: 6
+                  type: input
+                  name: home_phone
+                  placeholder: HOME PHONE
+                  classNames:
+                  required: true
+                - gutter: 6
+                  type: input
+                  name: mobile_phone 
+                  placeholder: MOBILE PHONE
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: input
+                  name: home_email
+                  placeholder: HOME EMAIL
+                  classNames:
+                  required: true
+                - gutter: 6
+                  type: input
+                  name: work_email
+                  placeholder: WORK EMAIL
+                  required: true
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: Tell us about <b> how you prefer </b> to receive notices and other communication
+            - cells:
+                - gutter: 3
+                  type: label_radio
+                  name: receive_notices
+                  value: 'mail1'
+                  id: 'mail1'
+                  checked: true
+                  label: 'By mail only'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 1
+                  type: raw_html
+                  text: '|'
+                - gutter: 3
+                  type: label_radio
+                  name: receive_notices
+                  value: 'email1'
+                  id: 'email1'
+                  checked: false
+                  label: 'By email only'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 1
+                  type: raw_html
+                  text: '|'
+                - gutter: 4
+                  type: label_radio
+                  name: receive_notices
+                  value: 'mail_email_1'
+                  id: 'mail_email_1'
+                  checked: false
+                  label: 'Both mail and email'
+                  classNames: 'form-control no-top-margin'
+            - cells:
+                - gutter: 4
+                  type: dropdown
+                  name: state
+                  values:
+                    - English
+
+- step:
+    sections:
+      - section:
+          heading: Race / Ethnicity
+          heading_text: Please enter the following info. When you've finished, select CONTINUE
+          lines:
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: What is your race/ethnicity? 
+                - gutter: 12
+                  type: text
+                  text: Check all that apply?
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: White 
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Filipino
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Native Hawaiian
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Other Pacific Islander
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Black or African American 
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Japanese
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Samoan
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: American Indian or Alaskan Native
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Asian Indian 
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Korean
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Guamanian or Chamorro
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: other
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: chinese 
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: Vietnamese
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 2
+                  type: text
+                  text: Other Asian 
+                  classNames: 'span-text medium-negative-margin'
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: IF HISPANIC/LATINO(OPTIONAL-check all that apply)
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Mexican 
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Chicano/a
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Cuba
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Mexican American
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Puerto Rican
+                  classNames: 'span-text medium-negative-margin'
+                - gutter: 1
+                  type: checkbox
+                - gutter: 3
+                  type: text
+                  text: Other
+                  classNames: 'span-text medium-negative-margin'
+
+- step:
+    sections:
+      - section:
+          heading: Who Do You Want To Enroll In a Plan?
+          heading_text: Select who you want to enroll in a plan, and what type of coverage you want. When youve finished, select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: name
+                  placeholder: NAME
+                  classNames:
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: age
+                  placeholder: AGE
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: relationship
+                  placeholder: RELATIONSHIP
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Enroll now in a plan?
+                - gutter: 6
+                  type: text
+                  text: Cannot be included in coverage?
+      - section:
+          heading: Who Can Enroll
+          lines:
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: name
+                  placeholder: NAME
+                  classNames:
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: age
+                  placeholder: AGE
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: relationship
+                  placeholder: [ Multiple Roles Display ]
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Enroll now in a Plan?
+                - gutter: 1
+                  type: checkbox
+                - gutter: 5
+                  type: text
+                  text: Yes.
+      - section:
+          lines:
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: name
+                  placeholder: NAME
+                  classNames:
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: age
+                  placeholder: AGE
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: relationship
+                  placeholder: Spouse
+                  required: true
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Enroll now in a Plan?
+                - gutter: 1
+                  type: checkbox
+                - gutter: 5
+                  type: text
+                  text: Yes.
+      - section:
+          heading: Benefit Type
+          lines:
+            - cells:
+                - gutter: 6
+                  type: label_radio
+                  name: benefit_type
+                  value: 'health'
+                  id: 'health1'
+                  checked: true
+                  label: 'Health'
+                  classNames: 'form-control no-top-margin' 
+                - gutter: 6
+                  type: label_radio
+                  name: benefit_type
+                  value: 'dental'
+                  id: 'dental1'
+                  checked: true
+                  label: 'Dental'
+                  classNames: 'form-control no-top-margin' 
+      - section:
+          heading: Benefit Type
+          lines:
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: <b> YOUR SPECIAL ENROLLMENT DEADLINE </b>
+                - gutter: 12
+                  type: raw_html
+                  text: if you enroll today your enrollment will begin <b> 05/01/2017</b>

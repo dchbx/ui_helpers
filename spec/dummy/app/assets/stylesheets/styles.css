@@ -8,9 +8,9 @@ input::-webkit-input-placeholder {
     color: #C3C3C3;
 }
 
-input {
+/*input {
   width: 100%;
-}
+}*/
 
 .span-text {
     padding-left: 10px !important;
