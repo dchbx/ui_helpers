@@ -9,7 +9,7 @@
                   type: input
                   name: first_name
                   placeholder: FIRST NAME *
-                  classNames:
+                  classNames: 
                   required: true
                 - gutter: 3
                   type: input
@@ -27,7 +27,7 @@
                   className: 'form-control'
                   required: true
                   values:
-                    - Select
+                    - NONE
                     - person two
                     - person three
             - cells:
@@ -35,28 +35,22 @@
                   type: text
                   text: Are you applying for coverage for yourself?*
                   classNames: 'span-text'
-                - gutter: 1
-                  type: radio
-                  name: opt_radio1
-                  value: 'YES'
-                  id: 'yes'
+                - gutter: 2
+                  type: label_radio
+                  name: gender
+                  value: male
+                  id: male
                   checked: true
-                - gutter: 1
-                  type: label
-                  name: opt_radio1
-                  label: 'YES'
-                  for: 'yes'
-                - gutter: 1
-                  type: radio
-                  name: opt_radio1
-                  value: 'NO'
-                  id: 'no'
-                  cheked: false
-                - gutter: 1
-                  type: label
-                  for: 'no'
-                  name: opt_radio1
-                  label: 'NO'
+                  label: 'MALE'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: gender
+                  value: female
+                  id: female
+                  checked: false
+                  label: 'FEMALE'
+                  classNames: form-control no-top-margin
                 - gutter: 3
                   type: raw_html
                   text: '| &nbsp <a href=""> Not Sure? </a>'
@@ -288,27 +282,27 @@
           heading_text: heading for second section
           lines:
             - cells:
-                - gutter: 4
+                - gutter: 5
                   type: text
                   text: Are you applying for coverage for yourself?*
                   classNames: 'span-text small-padding-left-right small-padding-top-bottom'
-                - gutter: 1
-                  type: radio
-                  name: opt_radio
-                  value: true
-                - gutter: 1
-                  type: label
-                  name: opt_radio
-                  label: 'YES'
-                - gutter: 1
-                  type: radio
-                  name: opt_radio
-                  value: true
-                - gutter: 1
-                  type: label
-                  name: opt_radio
-                  label: 'NO'
-                - gutter: 4
+                - gutter: 2
+                  type: label_radio
+                  name: gender
+                  value: male
+                  id: male
+                  checked: true
+                  label: 'MALE'
+                  classNames: 'form-control no-top-margin'
+                - gutter: 2
+                  type: label_radio
+                  name: gender
+                  value: female
+                  id: female
+                  checked: false
+                  label: 'FEMALE'
+                  classNames: form-control no-top-margin
+                - gutter: 2
                   type: raw_html
                   text: '| &nbsp <a href=""> Not Sure? </a>'
             - cells:

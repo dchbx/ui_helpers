@@ -1,5 +1,0 @@
-<% line.fields.each do |value| %>
-  <div class="col-md-<%= 12/line.fields.count %> col-lg-<%= 12/line.fields.count %> col-xs-<%= 12/line.fields.count %> col-sm-<%= 12/line.fields.count %>">
-    <div class="floatlabel-wrapper" style="position:relative"><label for="person_<%= value %>" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">MIDDLE NAME</label><input class="floatlabel form-control interaction-field-control-person-middle-name" placeholder="<%= value %>" type="text" name="person[<%= value %>]" id="person_<%= value %>" style="transition: all 0.1s ease-in-out;"></div>
-  </div>
-<% end %>
