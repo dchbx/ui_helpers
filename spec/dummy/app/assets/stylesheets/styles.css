@@ -98,8 +98,8 @@ textarea:focus, input:focus, input{
 }
 
 .small-padding-top-bottom {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .row-height {
@@ -111,7 +111,7 @@ textarea:focus, input:focus, input{
 }
 
 .medium-negative-margin {
-  margin-left: -30px;
+  margin-left: -40px;
 }
 
 .no-margin-padding {
@@ -130,3 +130,6 @@ textarea:focus, input:focus, input{
 .font-size-small {
   font-size: 12px;
 }
+
+
+

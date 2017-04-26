@@ -34,14 +34,14 @@
                 - gutter: 5
                   type: text
                   text: Are you applying for coverage for yourself?*
-                  classNames: 'small-padding-left-right small-padding-top-bottom'
+                  classNames: 'span-text'
                 - gutter: 1
                   type: radio
                   name: opt_radio1
                   value: 'YES'
                   id: 'yes'
                   checked: true
-                - gutter: 2
+                - gutter: 1
                   type: label
                   name: opt_radio1
                   label: 'YES'
@@ -52,11 +52,14 @@
                   value: 'NO'
                   id: 'no'
                   cheked: false
-                - gutter: 2
+                - gutter: 1
                   type: label
                   for: 'no'
                   name: opt_radio1
                   label: 'NO'
+                - gutter: 3
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
             - cells:
                 - gutter: 2
                   type: input
@@ -770,3 +773,174 @@
                 - gutter: 12
                   type: raw_html
                   text: if you enroll today your enrollment will begin <b> 05/01/2017</b>
+- step:
+    sections:
+      - section:
+          heading: Confirm Plan and Sign Up
+          heading_text: Please review and acknowledge the Agreement below along with the Terms and Conditions.
+                        You must also provide an electronic signature at the bottom of the page. When you're finished, 
+                        select SIGN UP FOR THIS PLAN to submit your enrollment to the insurance company.
+                        You don't have to pay today.
+                        Important You must complete these steps to enroll.
+          lines:
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: Agreement
+                  classNames: span-text
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: 'small-padding-top-bottom'
+                  text: <b> I understand that I must report any changes that might affect my eligibility or the eligibility of a household member for health insurance. </b>
+                        I can report changes by going online and logging into "My Account", by calling DC Health Link's Customer Care Center toll-free at 1-855-532-5465,
+                        or by submitting information via mail or in-person at one of the Department of Human Services' Service Centers. <br> <br>
+
+                        I'm the person whose name appears in the signaature line below. I understand that I'm submitting an application for health insurance and that
+                        information that I provided will be used to decide eligibility for each member of my application group. <br> <br>
+
+                        I've reviewd the information in this application, and I attest under penalty of perjury, that it's accurate and complete to the best of my knowledge,
+                        I understand if Im not truthful, there may be a penalty, including retroactive termination of my coverage and a obligation to repy all medical claims 
+                        previouslt covered by the health insurance
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 2
+                  type: text
+                  text: I Agree *
+                  classNames: 'span-text medium-negative-margin'
+      - section:
+          lines:
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: Terms and Conditions
+                  classNames: span-text
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: <b> I chose this plan based upon written information provided by the insurer and nobody has my permission to change the terms of the offer or to agree
+                        to changes to it. </b> <br> <br>
+
+                        I know that some plan benefits have limitations or maximums. <br><br>
+
+                        I Know that some personal information may be collected from other sources such as District of Columbia or federal databases that can verify information I 
+                        provided. <br>
+
+                        All of the information I provided on this application is true and complete to the best of my knowledge. <br> <br>
+
+                        I know that the plan contract will have in it the details of our agreement, including procedures, exclusions and limitations. No benefit comparison, summary
+                        or other description of the plan should be considered more correct than the contract in describing the details of the plan's services. <br>
+
+                        I know that this application is part of the agreement or policy issued by the insurer. When I sign below, it means I agree to the terms and conditions of that agreement or policy. <br> <br>
+
+                        WARNING It's a crime to provide false or misleading information to an insurer for the purpose of defrauding the insurer or any other person. Penalties include imprisonment and/or fines.
+      - section:
+          lines:
+            - cells:
+                - gutter: 4
+                  type: text
+                  text: Electronic Signature
+                  classNames: span-text
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: span-text
+                  text: When I type my name below, it means I sign the form and promise that all of the information in it is true and complete to the nest of my knowledge.
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: FIRST NAME *
+                  classNames:
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: MIDDLE NAME
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: LAST NAME *
+                  required: true
+- step:
+    sections:
+      - section:
+          heading: Confirm Plan and Sign Up
+          heading_text: Please review and acknowledge the Agreement below along with the Terms and Conditions.
+                        You must also provide an electronic signature at the bottom of the page. When you're finished, 
+                        select SIGN UP FOR THIS PLAN to submit your enrollment to the insurance company.
+                        You don't have to pay today.
+                        Important You must complete these steps to enroll.
+          lines:
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: Agreement
+                  classNames: span-text
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames: 'small-padding-top-bottom'
+                  text:  <b>I understand that I must report any changes that might affect my eligibility or the eligibility of a household member for health insurance. </b>
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 6
+                  type: text
+                  text: I further agree with the remainder of the information in this agreement
+                  classNames: 'span-text medium-negative-margin'
+      - section:
+          lines:
+            - cells:
+                - gutter: 12
+                  type: text
+                  text: Terms and Conditions
+                  classNames: span-text
+            - cells:
+                - gutter: 1
+                  type: checkbox
+                - gutter: 6
+                  type: text
+                  text: I agree with the Terms and Conditions described here *
+                  classNames: 'span-text medium-negative-margin'
+      - section:
+          lines:  
+            - cells:
+                - gutter: 4
+                  type: text
+                  text: Electronic Signature
+                  classNames: span-text
+            - cells:
+                - gutter: 12
+                  type: text
+                  classNames: span-text
+                  text: When I type my name below, it means I sign the form and promise that all of the information in it is true and complete to the nest of my knowledge.
+            - cells:
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: FIRST NAME *
+                  classNames:
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: MIDDLE NAME
+                  required: true
+                - gutter: 4
+                  type: input
+                  name: first_name
+                  placeholder: LAST NAME *
+                  required: true
+
+
+
+
+
+
+
+
+
+
