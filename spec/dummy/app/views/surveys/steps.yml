@@ -1337,5 +1337,373 @@
                   classNames: 'span-text'
                   label: Taxable portion of disaster relief payments.
 
+- step:
+    sections:
+      - section:
+          heading: Adjustments 1
+          heading_text: Please complete all adjustments to income into for Mary. To go to a different member of your household, Select 'Back to All Applciations'. When you've finished, select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Does this person expect to have adjustments to income in 2017 ? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+                - gutter: 4
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+                  classNames: 'span-text'
 
+- step:
+    sections:
+      - section:
+          heading: Adjustments 2
+          heading_text: Please complete all adjustments to income into for Mary. To go to a different member of your household, Select 'Back to All Applciations'. When you've finished, select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Does this person expect to have adjustments to income in 2017 ? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+                - gutter: 4
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: '<strong>Check all that apply</strong>, and give the amount & how often this person receives this income. <br> <strong> NOTE</strong>: You <strong>do not need to tell us</strong> about child support, veterans payments, or supplemental security income(SSI).*'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Alimony Paid
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 3
+                  type: input
+                  name: amount
+                  placeholder: AMOUNT *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: 'dropdown'
+                  name: 'check'
+                  classNames: 'form-control'
+                  classNames:
+                  required: true
+                  values:
+                    - HOW OFTEN
+                    - ONE
+                    - TWO
+                - gutter: 3
+                  type: input
+                  name: from
+                  placeholder: FROM *
+                  classNames:
+                  required: true
+                - gutter: 3
+                  type: input
+                  name: to
+                  placeholder: TO *
+                  classNames:
+                  required: true
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Student Loan Interest
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Other Deductions
+                  classNames: 'span-text'
+- step:
+    sections:
+      - section:
+          heading: Other Health Coverage 1
+          heading_text: Please complete all other health coverage info for Mary. To go to a different member of your household, Select 'Back to All Applciations'. When you've finished, select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Does this person currently have access to other  coverage, including through John Appleseed ? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+                - gutter: 4
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+                  classNames: 'span-text'
 
+- step:
+    sections:
+      - section:
+          heading: Other Health Coverage 2
+          heading_text: Please complete all other health coverage info for Mary. To go to a different member of your household, Select 'Back to All Applciations'. When you've finished, select CONTINUE.
+          lines:
+            - cells:
+                - gutter: 6
+                  type: text
+                  text: Does this person currently have access to other  coverage, including through John Appleseed ? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+                - gutter: 4
+                  type: raw_html
+                  text: '| &nbsp <a href=""> Not Sure? </a>'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  text: '<strong>Check all that apply</strong>, and give the amount & how often this person receives this income. <br> <strong> NOTE</strong>: You <strong>do not need to tell us</strong> about child support, veterans payments, or supplemental security income(SSI).*'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Alimony Paid
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: text
+                  classNames: 'span-text'
+                  text: Coverage Source (check all that apply) *
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Employer-sponsored coverage
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Continuation coverage from a former employer(COBRA) 
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Coverage purchased on the individual market 
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Medicaid
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: CHIP (Childeren's Health Insurance Program)
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Medicare
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Tricare
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: VA
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: checkbox
+                  label: Peace Corps
+                  classNames: 'span-text'
+- step:
+    sections:
+      - section:
+          heading: Other Questions
+          heading_text: Please answer the following questions. Tp go to a different person. select 'Back to All Applicants'. When you've finished. Select DONE WITH THIS PERSON.
+          lines:
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Has this person applied for an SSN *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Is this person pregnant? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Is this person blind? *
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Does this person need help with daily life activities, such as dressing or bathing?
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Does this person need help paying for any medical bills from the last 3 months?
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 8
+                  type: text
+                  text: Was this person in foster care at age 18 or older?
+                  classNames: 'span-text'
+                - gutter: 1
+                  type: label_radio
+                  name: row2
+                  value: 'yes2'
+                  id: 'yes2'
+                  checked: true
+                  label: 'Yes'
+                  classNames: 'span-text'
+                - gutter: 3
+                  type: label_radio
+                  name: row2
+                  value: 'no2'
+                  id: 'no2'
+                  checked: false
+                  label: 'No'
+                  classNames: 'span-text'
+            - cells:
+                - gutter: 12
+                  type: raw_html
+                  classNames:
+                  text: 'Help may include <span href="#" data-toggle="tooltip" title="Medicaid is a joint federal-state health program that provides health care coverage to low-income and disabled adults, children and families. To be eligible for DC Medicaid, you must be a District resident and must meet non-financial and financial eligibility requirements. Medicaid covers many services, including doctor visits, hospital care, prescription drugs, mental health services, transportation and many other services at little or no cost to the individual. Currently, 1 out of every 3 District residents receives quality health care coverage through the Medicaid program. Learn more about DC Medicaid." class= "dottedline test" >Medicaid</span>, <span href="#" data-toggle="tooltip" title="An informal way of referring to the Advance Premium Tax Credit for individuals or families or the Small Business Tax Credit." class= "dottedline test">tax credits</span>, or <span href="#" data-toggle="tooltip" title="A discount that lowers your costs for deductibles, coinsurance, copayments, and also lowers what you have to pay to reach your out-of-pocket limit. To get these savings, you must apply for financial assistance. DC Health Link will help you determine if you qualify as part of the application process. Then you can enroll. Most customers must enroll in a Silver Health Plan to receive cost-sharing reductions. Native Americans receive additional cost-sharing reductions regardless of a plan''s metal level." class= "dottedline test">cost-sharing reductions</span>'
