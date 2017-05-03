@@ -10,7 +10,7 @@
       <% end %>
 
       <div class="focus_effect module">
-        <%= form_tag send("step_#{@model.class.name.pluralize.underscore}_path") do %>
+        <%= workflow_form_for @model do %>
           <% @current_step.sections.each do |section| %>
             <div class="margin-bottom-30">
               <%= render 'workflow/section', :lines => section.lines, :heading => section.heading, :heading_text => section.heading_text, :classNames => section.classNames %>
