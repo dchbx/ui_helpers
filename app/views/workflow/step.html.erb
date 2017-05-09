@@ -16,8 +16,13 @@
               <%= render 'workflow/section', :lines => section.lines, :heading => section.heading, :heading_text => section.heading_text, :classNames => section.classNames %>
             </div>
           <% end %>
-          <% unless  @steps.last_step?(@current_step) %>
-          <%= submit_tag 'Next step' %>
+          <% if  @steps.last_step?(@current_step) %>
+            <%= submit_tag 'Finish' %>
+          <% elsif !@steps.first_step?(@current_step) %>
+            <%= button_to 'Previous Step', previous_step_for(@model, @current_step) %>
+            <%= submit_tag 'Next step' %>
+          <% else %>
+            <%= submit_tag 'Next step' %>
           <% end %>
         <% end %>
       </div>

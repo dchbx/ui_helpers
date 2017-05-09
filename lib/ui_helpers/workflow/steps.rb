@@ -15,6 +15,10 @@ module UIHelpers
         @steps[step - 1]
       end
 
+      def first_step?(step)
+        step.to_i == 1
+      end
+
       def last_step?(step)
         @steps.count == step.to_i
       end

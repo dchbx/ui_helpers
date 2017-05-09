@@ -11,5 +11,9 @@ module UIHelpers
         yield
       end
     end
+
+    def previous_step_for(model, current_step)
+      send("go_to_step_#{model.class.name.underscore.gsub('/', '_')}_path", model.id, current_step.to_i - 1)
+    end
   end
 end
