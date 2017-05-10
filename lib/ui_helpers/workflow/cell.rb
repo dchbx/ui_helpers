@@ -14,7 +14,7 @@ module UIHelpers
         @attribute = attributes['attribute']
         @disabled = !!attributes['disabled'] ? false : attributes['disabled']
         @required = !!attributes['required'] ? false : attributes['required']
-        @name = attributes['name']
+        @name = name_attribute(attributes['name'])
         @label = attributes['label']
         @placeholder = attributes['placeholder']
         @classNames = attributes['classNames']
@@ -25,7 +25,7 @@ module UIHelpers
       end
 
       def name_attribute(field=nil)
-        "attributes[#{attribute}]"
+        "attributes[#{field}]"
       end
     end
   end
